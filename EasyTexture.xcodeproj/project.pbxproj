@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B914AD2EB0E79724B4C426A /* Pods_EasyTexture_EasyTextureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D73C317DCD929C97E571C44 /* Pods_EasyTexture_EasyTextureUITests.framework */; };
+		132A26FE284366AE0004764D /* EasyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A26FD284366AE0004764D /* EasyProtocol.swift */; };
+		132A2700284375B20004764D /* UIView+EasyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A26FF284375B20004764D /* UIView+EasyNode.swift */; };
+		13AF3DDC2839E55600B2334C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3DDB2839E55600B2334C /* AppDelegate.swift */; };
+		13AF3DE02839E55600B2334C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3DDF2839E55600B2334C /* ViewController.swift */; };
+		13AF3DE32839E55600B2334C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF3DE12839E55600B2334C /* Main.storyboard */; };
+		13AF3DE52839E55900B2334C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AF3DE42839E55900B2334C /* Assets.xcassets */; };
+		13AF3DE82839E55900B2334C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF3DE62839E55900B2334C /* LaunchScreen.storyboard */; };
+		13AF3DF32839E55900B2334C /* EasyTextureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3DF22839E55900B2334C /* EasyTextureTests.swift */; };
+		13AF3DFD2839E55900B2334C /* EasyTextureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3DFC2839E55900B2334C /* EasyTextureUITests.swift */; };
+		13AF3DFF2839E55900B2334C /* EasyTextureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3DFE2839E55900B2334C /* EasyTextureUITestsLaunchTests.swift */; };
+		13AF3E0D2839EE6300B2334C /* EasyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E0C2839EE6300B2334C /* EasyView.swift */; };
+		13AF3E0F2839EE7400B2334C /* EasyLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E0E2839EE7400B2334C /* EasyLayer.swift */; };
+		13AF3E112839EE8200B2334C /* EasyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E102839EE8200B2334C /* EasyNode.swift */; };
+		13AF3E13283A171E00B2334C /* EasyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E12283A171E00B2334C /* EasyLayout.swift */; };
+		13AF3E15283A71A500B2334C /* RunLoopObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E14283A71A500B2334C /* RunLoopObserver.swift */; };
+		13AF3E17283A7AC600B2334C /* RunLoopOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E16283A7AC600B2334C /* RunLoopOperation.swift */; };
+		13AF3E192842152900B2334C /* EasyTextContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E182842152900B2334C /* EasyTextContainer.swift */; };
+		13AF3E1B2842153900B2334C /* EasyTextLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E1A2842153900B2334C /* EasyTextLayout.swift */; };
+		13AF3E1D28421DCC00B2334C /* EasyTextLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E1C28421DCC00B2334C /* EasyTextLine.swift */; };
+		13AF3E21284239EF00B2334C /* EasyTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E20284239EF00B2334C /* EasyTextNode.swift */; };
+		13AF3E2428427C1F00B2334C /* EasyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E2328427C1F00B2334C /* EasyTask.swift */; };
+		8C8EE6A8FAA2D5326A59317F /* Pods_EasyTextureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4349EBF34EE8C3F2F77DA39A /* Pods_EasyTextureTests.framework */; };
+		F108806B1626DF93134FFAC5 /* Pods_EasyTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C060FDCCB16439DFC61DE2 /* Pods_EasyTexture.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13AF3DEF2839E55900B2334C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13AF3DD02839E55600B2334C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13AF3DD72839E55600B2334C;
+			remoteInfo = EasyTexture;
+		};
+		13AF3DF92839E55900B2334C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13AF3DD02839E55600B2334C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13AF3DD72839E55600B2334C;
+			remoteInfo = EasyTexture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		132A26FD284366AE0004764D /* EasyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyProtocol.swift; sourceTree = "<group>"; };
+		132A26FF284375B20004764D /* UIView+EasyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EasyNode.swift"; sourceTree = "<group>"; };
+		13AF3DD82839E55600B2334C /* EasyTexture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTexture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13AF3DDB2839E55600B2334C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13AF3DDF2839E55600B2334C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13AF3DE22839E55600B2334C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13AF3DE42839E55900B2334C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13AF3DE72839E55900B2334C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13AF3DE92839E55900B2334C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13AF3DEE2839E55900B2334C /* EasyTextureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTextureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13AF3DF22839E55900B2334C /* EasyTextureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextureTests.swift; sourceTree = "<group>"; };
+		13AF3DF82839E55900B2334C /* EasyTextureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTextureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13AF3DFC2839E55900B2334C /* EasyTextureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextureUITests.swift; sourceTree = "<group>"; };
+		13AF3DFE2839E55900B2334C /* EasyTextureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		13AF3E0C2839EE6300B2334C /* EasyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyView.swift; sourceTree = "<group>"; };
+		13AF3E0E2839EE7400B2334C /* EasyLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLayer.swift; sourceTree = "<group>"; };
+		13AF3E102839EE8200B2334C /* EasyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyNode.swift; sourceTree = "<group>"; };
+		13AF3E12283A171E00B2334C /* EasyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLayout.swift; sourceTree = "<group>"; };
+		13AF3E14283A71A500B2334C /* RunLoopObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoopObserver.swift; sourceTree = "<group>"; };
+		13AF3E16283A7AC600B2334C /* RunLoopOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoopOperation.swift; sourceTree = "<group>"; };
+		13AF3E182842152900B2334C /* EasyTextContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextContainer.swift; sourceTree = "<group>"; };
+		13AF3E1A2842153900B2334C /* EasyTextLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextLayout.swift; sourceTree = "<group>"; };
+		13AF3E1C28421DCC00B2334C /* EasyTextLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextLine.swift; sourceTree = "<group>"; };
+		13AF3E20284239EF00B2334C /* EasyTextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextNode.swift; sourceTree = "<group>"; };
+		13AF3E2328427C1F00B2334C /* EasyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTask.swift; sourceTree = "<group>"; };
+		200272B1937A4C58F7A3CC2D /* Pods-EasyTextureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTextureTests.debug.xcconfig"; path = "Target Support Files/Pods-EasyTextureTests/Pods-EasyTextureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		24C1DE37AFFD8EC2A6B085E9 /* Pods-EasyTexture-EasyTextureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTexture-EasyTextureUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasyTexture-EasyTextureUITests/Pods-EasyTexture-EasyTextureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		28C060FDCCB16439DFC61DE2 /* Pods_EasyTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D73C317DCD929C97E571C44 /* Pods_EasyTexture_EasyTextureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTexture_EasyTextureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4349EBF34EE8C3F2F77DA39A /* Pods_EasyTextureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTextureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B26C31E6DB3F6BAAEAA84E /* Pods-EasyTexture-EasyTextureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTexture-EasyTextureUITests.release.xcconfig"; path = "Target Support Files/Pods-EasyTexture-EasyTextureUITests/Pods-EasyTexture-EasyTextureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8274C34380EAD3D8E216B681 /* Pods-EasyTexture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTexture.release.xcconfig"; path = "Target Support Files/Pods-EasyTexture/Pods-EasyTexture.release.xcconfig"; sourceTree = "<group>"; };
+		8543C0FCE47E3611E9B98677 /* Pods-EasyTextureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTextureTests.release.xcconfig"; path = "Target Support Files/Pods-EasyTextureTests/Pods-EasyTextureTests.release.xcconfig"; sourceTree = "<group>"; };
+		B59E03083AA3C8BB3D73C922 /* Pods-EasyTexture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTexture.debug.xcconfig"; path = "Target Support Files/Pods-EasyTexture/Pods-EasyTexture.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13AF3DD52839E55600B2334C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F108806B1626DF93134FFAC5 /* Pods_EasyTexture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AF3DEB2839E55900B2334C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8EE6A8FAA2D5326A59317F /* Pods_EasyTextureTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AF3DF52839E55900B2334C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B914AD2EB0E79724B4C426A /* Pods_EasyTexture_EasyTextureUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13AF3DCF2839E55600B2334C = {
+			isa = PBXGroup;
+			children = (
+				13AF3DDA2839E55600B2334C /* EasyTexture */,
+				13AF3DF12839E55900B2334C /* EasyTextureTests */,
+				13AF3DFB2839E55900B2334C /* EasyTextureUITests */,
+				13AF3DD92839E55600B2334C /* Products */,
+				DA3D6DC4E46EC9B9EFB9F4D1 /* Pods */,
+				D0D807DEE715CC1793D02982 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		13AF3DD92839E55600B2334C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13AF3DD82839E55600B2334C /* EasyTexture.app */,
+				13AF3DEE2839E55900B2334C /* EasyTextureTests.xctest */,
+				13AF3DF82839E55900B2334C /* EasyTextureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13AF3DDA2839E55600B2334C /* EasyTexture */ = {
+			isa = PBXGroup;
+			children = (
+				13AF3E0B2839EE3500B2334C /* EasyNode */,
+				13AF3DDB2839E55600B2334C /* AppDelegate.swift */,
+				13AF3DDF2839E55600B2334C /* ViewController.swift */,
+				13AF3DE12839E55600B2334C /* Main.storyboard */,
+				13AF3DE42839E55900B2334C /* Assets.xcassets */,
+				13AF3DE62839E55900B2334C /* LaunchScreen.storyboard */,
+				13AF3DE92839E55900B2334C /* Info.plist */,
+			);
+			path = EasyTexture;
+			sourceTree = "<group>";
+		};
+		13AF3DF12839E55900B2334C /* EasyTextureTests */ = {
+			isa = PBXGroup;
+			children = (
+				13AF3DF22839E55900B2334C /* EasyTextureTests.swift */,
+			);
+			path = EasyTextureTests;
+			sourceTree = "<group>";
+		};
+		13AF3DFB2839E55900B2334C /* EasyTextureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13AF3DFC2839E55900B2334C /* EasyTextureUITests.swift */,
+				13AF3DFE2839E55900B2334C /* EasyTextureUITestsLaunchTests.swift */,
+			);
+			path = EasyTextureUITests;
+			sourceTree = "<group>";
+		};
+		13AF3E0B2839EE3500B2334C /* EasyNode */ = {
+			isa = PBXGroup;
+			children = (
+				13AF3E2228423B8800B2334C /* Text */,
+				13AF3E0C2839EE6300B2334C /* EasyView.swift */,
+				13AF3E0E2839EE7400B2334C /* EasyLayer.swift */,
+				13AF3E20284239EF00B2334C /* EasyTextNode.swift */,
+				13AF3E102839EE8200B2334C /* EasyNode.swift */,
+				13AF3E12283A171E00B2334C /* EasyLayout.swift */,
+				13AF3E14283A71A500B2334C /* RunLoopObserver.swift */,
+				13AF3E16283A7AC600B2334C /* RunLoopOperation.swift */,
+				13AF3E2328427C1F00B2334C /* EasyTask.swift */,
+				132A26FD284366AE0004764D /* EasyProtocol.swift */,
+				132A26FF284375B20004764D /* UIView+EasyNode.swift */,
+			);
+			path = EasyNode;
+			sourceTree = "<group>";
+		};
+		13AF3E2228423B8800B2334C /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				13AF3E182842152900B2334C /* EasyTextContainer.swift */,
+				13AF3E1A2842153900B2334C /* EasyTextLayout.swift */,
+				13AF3E1C28421DCC00B2334C /* EasyTextLine.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		D0D807DEE715CC1793D02982 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28C060FDCCB16439DFC61DE2 /* Pods_EasyTexture.framework */,
+				2D73C317DCD929C97E571C44 /* Pods_EasyTexture_EasyTextureUITests.framework */,
+				4349EBF34EE8C3F2F77DA39A /* Pods_EasyTextureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA3D6DC4E46EC9B9EFB9F4D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B59E03083AA3C8BB3D73C922 /* Pods-EasyTexture.debug.xcconfig */,
+				8274C34380EAD3D8E216B681 /* Pods-EasyTexture.release.xcconfig */,
+				24C1DE37AFFD8EC2A6B085E9 /* Pods-EasyTexture-EasyTextureUITests.debug.xcconfig */,
+				61B26C31E6DB3F6BAAEAA84E /* Pods-EasyTexture-EasyTextureUITests.release.xcconfig */,
+				200272B1937A4C58F7A3CC2D /* Pods-EasyTextureTests.debug.xcconfig */,
+				8543C0FCE47E3611E9B98677 /* Pods-EasyTextureTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13AF3DD72839E55600B2334C /* EasyTexture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13AF3E022839E55900B2334C /* Build configuration list for PBXNativeTarget "EasyTexture" */;
+			buildPhases = (
+				1976566040D832FFDE8DA746 /* [CP] Check Pods Manifest.lock */,
+				13AF3DD42839E55600B2334C /* Sources */,
+				13AF3DD52839E55600B2334C /* Frameworks */,
+				13AF3DD62839E55600B2334C /* Resources */,
+				91B3B628E0635247E1D87B4A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyTexture;
+			productName = EasyTexture;
+			productReference = 13AF3DD82839E55600B2334C /* EasyTexture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13AF3DED2839E55900B2334C /* EasyTextureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13AF3E052839E55900B2334C /* Build configuration list for PBXNativeTarget "EasyTextureTests" */;
+			buildPhases = (
+				680252D8B2858E6E5F41009F /* [CP] Check Pods Manifest.lock */,
+				13AF3DEA2839E55900B2334C /* Sources */,
+				13AF3DEB2839E55900B2334C /* Frameworks */,
+				13AF3DEC2839E55900B2334C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13AF3DF02839E55900B2334C /* PBXTargetDependency */,
+			);
+			name = EasyTextureTests;
+			productName = EasyTextureTests;
+			productReference = 13AF3DEE2839E55900B2334C /* EasyTextureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13AF3DF72839E55900B2334C /* EasyTextureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13AF3E082839E55900B2334C /* Build configuration list for PBXNativeTarget "EasyTextureUITests" */;
+			buildPhases = (
+				B2B5D5182F566A7240D62BB7 /* [CP] Check Pods Manifest.lock */,
+				13AF3DF42839E55900B2334C /* Sources */,
+				13AF3DF52839E55900B2334C /* Frameworks */,
+				13AF3DF62839E55900B2334C /* Resources */,
+				27F1E0BB453798E3099A4B96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13AF3DFA2839E55900B2334C /* PBXTargetDependency */,
+			);
+			name = EasyTextureUITests;
+			productName = EasyTextureUITests;
+			productReference = 13AF3DF82839E55900B2334C /* EasyTextureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13AF3DD02839E55600B2334C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					13AF3DD72839E55600B2334C = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					13AF3DED2839E55900B2334C = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 13AF3DD72839E55600B2334C;
+					};
+					13AF3DF72839E55900B2334C = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 13AF3DD72839E55600B2334C;
+					};
+				};
+			};
+			buildConfigurationList = 13AF3DD32839E55600B2334C /* Build configuration list for PBXProject "EasyTexture" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13AF3DCF2839E55600B2334C;
+			productRefGroup = 13AF3DD92839E55600B2334C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13AF3DD72839E55600B2334C /* EasyTexture */,
+				13AF3DED2839E55900B2334C /* EasyTextureTests */,
+				13AF3DF72839E55900B2334C /* EasyTextureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13AF3DD62839E55600B2334C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AF3DE82839E55900B2334C /* LaunchScreen.storyboard in Resources */,
+				13AF3DE52839E55900B2334C /* Assets.xcassets in Resources */,
+				13AF3DE32839E55600B2334C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AF3DEC2839E55900B2334C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AF3DF62839E55900B2334C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1976566040D832FFDE8DA746 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyTexture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27F1E0BB453798E3099A4B96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyTexture-EasyTextureUITests/Pods-EasyTexture-EasyTextureUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyTexture-EasyTextureUITests/Pods-EasyTexture-EasyTextureUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyTexture-EasyTextureUITests/Pods-EasyTexture-EasyTextureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		680252D8B2858E6E5F41009F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyTextureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91B3B628E0635247E1D87B4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyTexture/Pods-EasyTexture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyTexture/Pods-EasyTexture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyTexture/Pods-EasyTexture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B5D5182F566A7240D62BB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyTexture-EasyTextureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13AF3DD42839E55600B2334C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AF3E15283A71A500B2334C /* RunLoopObserver.swift in Sources */,
+				13AF3E17283A7AC600B2334C /* RunLoopOperation.swift in Sources */,
+				13AF3E21284239EF00B2334C /* EasyTextNode.swift in Sources */,
+				13AF3DE02839E55600B2334C /* ViewController.swift in Sources */,
+				13AF3E1D28421DCC00B2334C /* EasyTextLine.swift in Sources */,
+				13AF3E0F2839EE7400B2334C /* EasyLayer.swift in Sources */,
+				13AF3E0D2839EE6300B2334C /* EasyView.swift in Sources */,
+				132A26FE284366AE0004764D /* EasyProtocol.swift in Sources */,
+				13AF3DDC2839E55600B2334C /* AppDelegate.swift in Sources */,
+				13AF3E2428427C1F00B2334C /* EasyTask.swift in Sources */,
+				13AF3E112839EE8200B2334C /* EasyNode.swift in Sources */,
+				13AF3E192842152900B2334C /* EasyTextContainer.swift in Sources */,
+				132A2700284375B20004764D /* UIView+EasyNode.swift in Sources */,
+				13AF3E1B2842153900B2334C /* EasyTextLayout.swift in Sources */,
+				13AF3E13283A171E00B2334C /* EasyLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AF3DEA2839E55900B2334C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AF3DF32839E55900B2334C /* EasyTextureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AF3DF42839E55900B2334C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AF3DFF2839E55900B2334C /* EasyTextureUITestsLaunchTests.swift in Sources */,
+				13AF3DFD2839E55900B2334C /* EasyTextureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13AF3DF02839E55900B2334C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13AF3DD72839E55600B2334C /* EasyTexture */;
+			targetProxy = 13AF3DEF2839E55900B2334C /* PBXContainerItemProxy */;
+		};
+		13AF3DFA2839E55900B2334C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13AF3DD72839E55600B2334C /* EasyTexture */;
+			targetProxy = 13AF3DF92839E55900B2334C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13AF3DE12839E55600B2334C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13AF3DE22839E55600B2334C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13AF3DE62839E55900B2334C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13AF3DE72839E55900B2334C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13AF3E002839E55900B2334C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13AF3E012839E55900B2334C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13AF3E032839E55900B2334C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59E03083AA3C8BB3D73C922 /* Pods-EasyTexture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RECMCZDE9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EasyTexture/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuan.EasyTexture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13AF3E042839E55900B2334C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8274C34380EAD3D8E216B681 /* Pods-EasyTexture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RECMCZDE9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EasyTexture/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuan.EasyTexture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13AF3E062839E55900B2334C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 200272B1937A4C58F7A3CC2D /* Pods-EasyTextureTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RECMCZDE9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuan.EasyTextureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyTexture.app/EasyTexture";
+			};
+			name = Debug;
+		};
+		13AF3E072839E55900B2334C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8543C0FCE47E3611E9B98677 /* Pods-EasyTextureTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RECMCZDE9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuan.EasyTextureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyTexture.app/EasyTexture";
+			};
+			name = Release;
+		};
+		13AF3E092839E55900B2334C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C1DE37AFFD8EC2A6B085E9 /* Pods-EasyTexture-EasyTextureUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RECMCZDE9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuan.EasyTextureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyTexture;
+			};
+			name = Debug;
+		};
+		13AF3E0A2839E55900B2334C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B26C31E6DB3F6BAAEAA84E /* Pods-EasyTexture-EasyTextureUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RECMCZDE9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuan.EasyTextureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyTexture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13AF3DD32839E55600B2334C /* Build configuration list for PBXProject "EasyTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AF3E002839E55900B2334C /* Debug */,
+				13AF3E012839E55900B2334C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13AF3E022839E55900B2334C /* Build configuration list for PBXNativeTarget "EasyTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AF3E032839E55900B2334C /* Debug */,
+				13AF3E042839E55900B2334C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13AF3E052839E55900B2334C /* Build configuration list for PBXNativeTarget "EasyTextureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AF3E062839E55900B2334C /* Debug */,
+				13AF3E072839E55900B2334C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13AF3E082839E55900B2334C /* Build configuration list for PBXNativeTarget "EasyTextureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AF3E092839E55900B2334C /* Debug */,
+				13AF3E0A2839E55900B2334C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13AF3DD02839E55600B2334C /* Project object */;
+}
