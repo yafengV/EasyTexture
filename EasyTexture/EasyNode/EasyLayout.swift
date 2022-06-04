@@ -23,10 +23,7 @@ class EasyLayout {
         guard let node = YGNodeGetContext(ref)?.load(as: EasyNode.self) else {
             return YGSize.init(width: 0, height: 0)
         }
-        var sizeThatFits: CGSize = .zero
-        if node.subnodes.isEmpty == false {
-            sizeThatFits = node.sizeThatFits(.init(width: CGFloat(constrainedWidth), height: CGFloat(constrainedHeight)))
-        }
+        let sizeThatFits = node.sizeThatFits(.init(width: CGFloat(constrainedWidth), height: CGFloat(constrainedHeight)))
         return YGSize.init(width: YGSanitizeMeasurement(constrainedWidth, Float(sizeThatFits.width), widthMode), height: YGSanitizeMeasurement(constrainedHeight, Float(sizeThatFits.height), heightMode))
         
     }
@@ -386,7 +383,7 @@ class EasyLayout {
     /// - Returns: 适配size
     func sizeThatFit(_ size: CGSize) -> CGSize {
         YGNodeCalculateLayout(ygRef, Float(size.width), Float(size.height), direction)
-        return CGSize(width: CGFloat(width), height: CGFloat(height))
+        return CGSize(width: CGFloat(YGNodeLayoutGetWidth(ygRef)), height: CGFloat(YGNodeLayoutGetHeight(ygRef)))
     }
     
     func attachFrameToNode() {

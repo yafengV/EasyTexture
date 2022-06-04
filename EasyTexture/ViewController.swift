@@ -15,7 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         title = "Demo"
         view.backgroundColor = .white
-//
+//        testNode()
+        testView()
+    }
+    
+    func testNode() {
         let node: EasyNode = .init(frame: .zero)
         node.layout.left = 0
         node.layout.top = 0
@@ -27,48 +31,99 @@ class ViewController: UIViewController {
         node.layout.alignItems = .center
 
         let node2: EasyNode = .init(frame: .zero)
-        node2.layout.flexGrow = 1
-        node2.layout.alignSelf = .stretch
+//        node2.layout.flexGrow = 1
+//        node2.layout.alignSelf = .stretch
         node2.backgroundColor = .yellow
+//        node2.layout.flexDirection = .column
+//        node2.layout.justifyContent = .center
+//        node2.layout.alignItems = .flexStart
+        
+//        let node4: EasyNode = .init(frame: .zero)
+//        node4.backgroundColor = .gray
+//        node4.layout.height = 100
+//        node4.layout.alignSelf = .stretch
+//        node2.addSubNode(node4)
+        
+        let textNode: EasyTextNode = .init(frame: .zero)
+        textNode.layout.alignSelf = .stretch
+        textNode.backgroundColor = .red
+        textNode.text = .init(string: "我我我我我我我我我我我我我哦我我我", attributes:[.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 16)])
+        textNode.tag = "text"
+        textNode.layout.maxWidth = Float(UIScreen.main.bounds.width / 2)
+        node2.addSubNode(textNode)
 
         let node3: EasyNode = .init(frame: .zero)
         node3.layout.flexGrow = 1
-        node3.layout.height = 100
-        node3.backgroundColor = .blue
+        node3.layout.alignSelf = .stretch
+        node3.backgroundColor = .green
 
         node.addSubNode(node2)
         node.addSubNode(node3)
 
         view.addSubNode(node)
         node.setNeedsLayout()
+    }
+    
+    func testView() {
+        let node: UIView = .init(frame: .zero)
+        node.yoga.isEnabled = true
+        node.yoga.left = 0
+        node.yoga.top = 0
+        node.yoga.width = .init(view.bounds.width)
+        node.yoga.height = .init(view.bounds.height)
+        node.backgroundColor = .red
+        node.yoga.flexDirection = .row
+        node.yoga.justifyContent = .flexStart
+        node.yoga.alignItems = .center
+        node.yoga.flexGrow = 1
+        node.yoga.flexShrink = 1
+        node.yoga.flexWrap = .noWrap
+
+        let node2: UIView = .init(frame: .zero)
+        node2.yoga.isEnabled = true
+        node2.yoga.flexGrow = 1
+//        node2.yoga.flexShrink = 1
+//        node2.yoga.flexWrap = .noWrap
+//        node2.yoga.alignSelf = .stretch
+        node2.backgroundColor = .yellow
+//        node2.yoga.flexDirection = .column
+//        node2.yoga.justifyContent = .center
+//        node2.yoga.alignItems = .flexStart
         
-//        let view1 = UIView.init(frame: .zero)
-//        view1.backgroundColor = .red
-//        view1.yoga.left = 0
-//        view1.yoga.top = 0
-//        view1.yoga.width = YGValue(view.bounds.width)
-//        view1.yoga.height = YGValue(view.bounds.height)
-//        view1.yoga.flexDirection = .row
-//        view1.yoga.justifyContent = .flexStart
-//        view1.yoga.alignItems = .center
-//        view1.yoga.isEnabled = true
-//
-//        let view2 = UIView.init(frame: .zero)
-//        view2.backgroundColor = .yellow
-//        view2.yoga.width = 100
-//        view2.yoga.height = 100
-//        view2.yoga.isEnabled = true
-//
-//        let view3 = UIView.init(frame: .zero)
-//        view3.backgroundColor = .blue
-//        view3.yoga.width = 100
-//        view3.yoga.height = 200
-//        view3.yoga.isEnabled = true
-//
-//        view.addSubview(view1)
-//        view1.addSubview(view2)
-//        view1.addSubview(view3)
-//        view1.yoga.applyLayout(preservingOrigin: false)
+//        let node4: UIView = .init(frame: .zero)
+//        node4.yoga.isEnabled = true
+//        node4.backgroundColor = .gray
+//        node4.yoga.height = 100
+//        node4.yoga.alignSelf = .stretch
+//        node2.addSubview(node4)
+
+        let textNode: UILabel = .init(frame: .zero)
+        textNode.yoga.isEnabled = true
+        textNode.yoga.alignSelf = .stretch
+        textNode.backgroundColor = .blue
+        textNode.text = "哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或"
+        textNode.font = .systemFont(ofSize: 16)
+//        textNode.yoga.flexGrow = 1
+//        textNode.yoga.flexShrink = 1
+//        textNode.yoga.flexWrap = .noWrap
+        textNode.yoga.maxWidth = YGValue(UIScreen.main.bounds.width / 2)
+        textNode.textColor = .white
+        textNode.numberOfLines = 0
+        node2.addSubview(textNode)
+
+        let node3: UIView = .init(frame: .zero)
+        node3.yoga.isEnabled = true
+        node3.yoga.flexGrow = 1
+        node3.yoga.alignSelf = .stretch
+        node3.backgroundColor = .green
+//        node3.yoga.flexShrink = 1
+//        node3.yoga.flexWrap = .noWrap
+
+        node.addSubview(node2)
+        node.addSubview(node3)
+
+        view.addSubview(node)
+        node.yoga.applyLayout(preservingOrigin: false)
     }
 
 

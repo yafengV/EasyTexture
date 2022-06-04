@@ -36,11 +36,11 @@ class EasyTextLine: NSObject {
                 let range = CTLineGetStringRange(ctLine)
                 self.range = .init(location: range.location, length: range.length)
                 if CTLineGetGlyphCount(ctLine) > 0 {
-                    let runs = CTLineGetGlyphRuns(ctLine)
-                    let run = CFArrayGetValueAtIndex(runs, 0).load(as: CTRun.self)
-                    var pos: CGPoint = .zero
-                    CTRunGetPositions(run, .init(location: 0, length: 1), &pos)
-                    firstGlyphPos = pos.x
+                    let runs = CTLineGetGlyphRuns(ctLine) as! [CTRun]
+                    let run = runs.first!
+                    let pos = UnsafeMutablePointer<CGPoint>.allocate(capacity: 1)
+                    CTRunGetPositions(run, .init(location: 0, length: 1), pos)
+                    firstGlyphPos = pos.pointee.x
                 } else {
                     firstGlyphPos = 0
                 }
@@ -62,8 +62,8 @@ class EasyTextLine: NSObject {
     
     static func lineWithCTLine(_ ctLine: CTLine, position: CGPoint) -> EasyTextLine {
         let line: EasyTextLine = .init()
-        line.ctLine = ctLine
         line.position = position
+        line.ctLine = ctLine
         return line
     }
 }

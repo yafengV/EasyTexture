@@ -16,7 +16,9 @@ class EasyTextNode: EasyNode {
                 return
             }
             if let text = text {
-                textLayout = .layoutWithContainer(.init(), text: text)
+                let container: EasyTextContainer = .init()
+                container.size = frame.size
+                textLayout = .layoutWithContainer(container, text: text)
             } else {
                 textLayout = nil
             }
@@ -24,11 +26,17 @@ class EasyTextNode: EasyNode {
     }
     
     override func sizeThatFits(_ size: CGSize) -> CGSize {
-        textLayout?.frame.size ?? .zero
+        textLayout?.sizeThatFit(size) ?? .zero
     }
     
     override func draw(context: CGContext, size: CGSize) {
         textLayout?.drawInContext(context)
+    }
+    
+    override func copyPropToNode(_ node: EasyNode) {
+        super.copyPropToNode(node)
+        guard let node = node as? EasyTextNode else { return }
+        node.text = text
     }
     
 }

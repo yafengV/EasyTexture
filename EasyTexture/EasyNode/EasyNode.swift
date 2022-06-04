@@ -9,6 +9,8 @@ import UIKit
 
 class EasyNode: NSObject {
     
+    var tag: String?
+    
     weak var superNode: EasyNode?
     var subnodes: [EasyNode] = []
 
@@ -37,13 +39,14 @@ class EasyNode: NSObject {
         return self
     }
     
-    init(frame: CGRect) {
+    required init(frame: CGRect) {
         self.frame = frame
         view = .init(frame: frame)
         layer = view.layer as! EasyLayer
         super.init()
         layer.node = self
         view.node = self
+        layer.contentsScale = UIScreen.main.scale
     }
     
     func _layout() {
@@ -104,7 +107,7 @@ class EasyNode: NSObject {
         }
     }
     
-    func willDisplay() {
+    func  willDisplay() {
         drawTask?.cancel()
         let node = self.easyCopy()
         drawTask = .init()
@@ -128,6 +131,10 @@ class EasyNode: NSObject {
     func draw(context: CGContext, size: CGSize) {
         
     }
+    
+    func copyPropToNode(_ node: EasyNode) {
+        
+    }
 }
 
 extension EasyNode: CALayerDelegate {
@@ -140,12 +147,13 @@ extension EasyNode: CALayerDelegate {
 extension EasyNode: EasyCopy {
     typealias T = EasyNode
     func easyCopy() -> EasyNode {
-        let node: EasyNode = .init(frame: frame)
+        let node: EasyNode = Self.init(frame: frame)
         node.superNode = superNode
         node.subnodes = .init(subnodes)
         node.backgroundColor = backgroundColor
         node.layout = layout.easyCopy()
         node.content = content
+        copyPropToNode(node)
         return node
     }
 }
@@ -158,7 +166,8 @@ extension EasyNode {
         context.addRect(.init(x: 0, y: 0, width: size.width * scale, height: size.height * scale))
         context.fillPath()
         draw(context: context, size: size)
-        content = UIGraphicsGetImageFromCurrentImageContext()
+        let content = UIGraphicsGetImageFromCurrentImageContext()
+        self.content = content
         UIGraphicsEndImageContext()
     }
 }

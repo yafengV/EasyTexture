@@ -21,28 +21,40 @@ class EasyTextLayout: NSObject {
         layout.text = text
         layout.container = container
         
-        var rect: CGRect = .init(origin: .zero, size: container.size)
-        rect = rect.applying(.init(scaleX: 1, y: -1))
+        if container.size == .zero {
+            return layout
+        }
+        _ = layout.sizeThatFit(container.size)
+        return layout
+    }
+    
+    func sizeThatFit(_ size: CGSize) -> CGSize {
+        guard let container = container, let text = text else {
+            return .zero
+        }
+        container.size = size
+        let originRect: CGRect = .init(origin: .zero, size: container.size)
+        let rect = originRect.applying(.init(scaleX: 1, y: -1))
         let path: CGPath = .init(rect: rect, transform: nil)
         
         let ctSetter: CTFramesetter = CTFramesetterCreateWithAttributedString(text)
         let ctFrame: CTFrame = CTFramesetterCreateFrame(ctSetter, .init(location: 0, length: text.length), path, nil)
         
-        let ctLines = CTFrameGetLines(ctFrame)
-        let lineCount = CFArrayGetCount(ctLines)
+        let ctLines = CTFrameGetLines(ctFrame) as! [CTLine]
+        let lineCount = ctLines.count
         
-        var ctLineorigins: [CGPoint] = []
-        CTFrameGetLineOrigins(ctFrame, .init(location: 0, length: lineCount), &ctLineorigins)
+        let ctLineorigins = UnsafeMutablePointer<CGPoint>.allocate(capacity: lineCount)
+        CTFrameGetLineOrigins(ctFrame, .init(location: 0, length: lineCount), ctLineorigins)
         
         var textRect: CGRect = .zero
         
         var lines: [EasyTextLine] = []
-        for i in 0...lineCount {
-            let ctLine = CFArrayGetValueAtIndex(ctLines, i).load(as: CTLine.self)
-            let ctRuns = CTLineGetGlyphRuns(ctLine)
-            guard CFArrayGetCount(ctRuns) > 0 else { continue }
+        for i in 0..<lineCount {
+            let ctLine = ctLines[i]
+            let ctRuns = CTLineGetGlyphRuns(ctLine) as! [CTRun]
+            guard !ctRuns.isEmpty else { continue }
             let ctLineOrigin = ctLineorigins[i]
-            let position: CGPoint = .init(x: ctLineOrigin.x, y: rect.height - ctLineOrigin.y)
+            let position: CGPoint = .init(x: originRect.origin.x + ctLineOrigin.x, y: originRect.height + originRect.origin.y - ctLineOrigin.y)
             
             let line: EasyTextLine = .lineWithCTLine(ctLine, position: position)
             line.row = i
@@ -55,10 +67,10 @@ class EasyTextLayout: NSObject {
             }
         }
         
-        layout.frame = textRect
-        layout.lines = lines
-        layout.setter = ctSetter
-        return layout
+        self.frame = textRect
+        self.lines = lines
+        self.setter = ctSetter
+        return textRect.size
     }
     
     func drawInContext(_ context: CGContext) {
@@ -73,10 +85,10 @@ class EasyTextLayout: NSObject {
             let posX = line.position.x
             let posY = size.height - line.position.y
             guard let ctLine = line.ctLine else { continue }
-            let runs = CTLineGetGlyphRuns(ctLine)
-            let count = CFArrayGetCount(runs)
-            for i in 0...count {
-                let run = CFArrayGetValueAtIndex(runs, i).load(as: CTRun.self)
+            let runs = CTLineGetGlyphRuns(ctLine) as! [CTRun]
+            let count = runs.count
+            for i in 0..<count {
+                let run = runs[i]
                 context.textMatrix = .identity
                 context.textPosition = .init(x: posX, y: posY)
                 drawRun(run, context: context)
