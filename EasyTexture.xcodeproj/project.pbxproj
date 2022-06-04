@@ -29,6 +29,7 @@
 		13AF3E1D28421DCC00B2334C /* EasyTextLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E1C28421DCC00B2334C /* EasyTextLine.swift */; };
 		13AF3E21284239EF00B2334C /* EasyTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E20284239EF00B2334C /* EasyTextNode.swift */; };
 		13AF3E2428427C1F00B2334C /* EasyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E2328427C1F00B2334C /* EasyTask.swift */; };
+		13F52FF5284BB8DD0064FB10 /* EasyImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F52FF4284BB8DD0064FB10 /* EasyImageNode.swift */; };
 		8C8EE6A8FAA2D5326A59317F /* Pods_EasyTextureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4349EBF34EE8C3F2F77DA39A /* Pods_EasyTextureTests.framework */; };
 		F108806B1626DF93134FFAC5 /* Pods_EasyTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C060FDCCB16439DFC61DE2 /* Pods_EasyTexture.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		13AF3E1C28421DCC00B2334C /* EasyTextLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextLine.swift; sourceTree = "<group>"; };
 		13AF3E20284239EF00B2334C /* EasyTextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextNode.swift; sourceTree = "<group>"; };
 		13AF3E2328427C1F00B2334C /* EasyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTask.swift; sourceTree = "<group>"; };
+		13F52FF4284BB8DD0064FB10 /* EasyImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyImageNode.swift; sourceTree = "<group>"; };
 		200272B1937A4C58F7A3CC2D /* Pods-EasyTextureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTextureTests.debug.xcconfig"; path = "Target Support Files/Pods-EasyTextureTests/Pods-EasyTextureTests.debug.xcconfig"; sourceTree = "<group>"; };
 		24C1DE37AFFD8EC2A6B085E9 /* Pods-EasyTexture-EasyTextureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTexture-EasyTextureUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasyTexture-EasyTextureUITests/Pods-EasyTexture-EasyTextureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		28C060FDCCB16439DFC61DE2 /* Pods_EasyTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,7 @@
 				13AF3E2328427C1F00B2334C /* EasyTask.swift */,
 				132A26FD284366AE0004764D /* EasyProtocol.swift */,
 				132A26FF284375B20004764D /* UIView+EasyNode.swift */,
+				13F52FF4284BB8DD0064FB10 /* EasyImageNode.swift */,
 			);
 			path = EasyNode;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				13AF3E0D2839EE6300B2334C /* EasyView.swift in Sources */,
 				132A26FE284366AE0004764D /* EasyProtocol.swift in Sources */,
 				13AF3DDC2839E55600B2334C /* AppDelegate.swift in Sources */,
+				13F52FF5284BB8DD0064FB10 /* EasyImageNode.swift in Sources */,
 				13AF3E2428427C1F00B2334C /* EasyTask.swift in Sources */,
 				13AF3E112839EE8200B2334C /* EasyNode.swift in Sources */,
 				13AF3E192842152900B2334C /* EasyTextContainer.swift in Sources */,

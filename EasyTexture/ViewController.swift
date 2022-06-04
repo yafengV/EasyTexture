@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         title = "Demo"
         view.backgroundColor = .white
-//        testNode()
-        testView()
+        testNode()
+//        testView()
     }
     
     func testNode() {
@@ -31,18 +31,7 @@ class ViewController: UIViewController {
         node.layout.alignItems = .center
 
         let node2: EasyNode = .init(frame: .zero)
-//        node2.layout.flexGrow = 1
-//        node2.layout.alignSelf = .stretch
         node2.backgroundColor = .yellow
-//        node2.layout.flexDirection = .column
-//        node2.layout.justifyContent = .center
-//        node2.layout.alignItems = .flexStart
-        
-//        let node4: EasyNode = .init(frame: .zero)
-//        node4.backgroundColor = .gray
-//        node4.layout.height = 100
-//        node4.layout.alignSelf = .stretch
-//        node2.addSubNode(node4)
         
         let textNode: EasyTextNode = .init(frame: .zero)
         textNode.layout.alignSelf = .stretch
@@ -55,7 +44,12 @@ class ViewController: UIViewController {
         let node3: EasyNode = .init(frame: .zero)
         node3.layout.flexGrow = 1
         node3.layout.alignSelf = .stretch
+        node3.layout.justifyContent = .center
         node3.backgroundColor = .green
+        
+        let imageNode: EasyImageNode = .init(frame: .zero)
+        imageNode.image = .init(named: "test")
+        node3.addSubNode(imageNode)
 
         node.addSubNode(node2)
         node.addSubNode(node3)
