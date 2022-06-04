@@ -24,8 +24,21 @@ class EasyNode: NSObject {
         }
     }
     
-    var view: EasyView
-    var layer: EasyLayer
+    var viewClass: UIView.Type {
+        EasyView.self
+    }
+    
+    lazy var view: UIView = {
+        viewClass.init(frame: .zero)
+    }()
+    
+    lazy var layer: EasyLayer? = {
+        guard let layer = view.layer as? EasyLayer else { return nil }
+        layer.node = self
+        layer.contentsScale = UIScreen.main.scale
+        return layer
+    }()
+    
     lazy var layout: EasyLayout = .init(node: self)
     
     var content: UIImage?
@@ -41,12 +54,7 @@ class EasyNode: NSObject {
     
     required init(frame: CGRect) {
         self.frame = frame
-        view = .init(frame: frame)
-        layer = view.layer as! EasyLayer
         super.init()
-        layer.node = self
-        view.node = self
-        layer.contentsScale = UIScreen.main.scale
     }
     
     func _layout() {
@@ -114,7 +122,7 @@ class EasyNode: NSObject {
         drawTask?.obj = node
         let size = node.frame.size
         let opaque = true
-        let scale = layer.contentsScale
+        let scale = layer?.contentsScale ?? 1
         drawTask?.action = {
             node._draw(size: size, opaque: opaque, scale: scale)
         }
@@ -125,7 +133,7 @@ class EasyNode: NSObject {
             return
         }
         content = node.content
-        layer.contents = content?.cgImage
+        layer?.contents = content?.cgImage
     }
     
     func draw(context: CGContext, size: CGSize) {

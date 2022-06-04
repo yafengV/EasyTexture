@@ -30,6 +30,8 @@
 		13AF3E21284239EF00B2334C /* EasyTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E20284239EF00B2334C /* EasyTextNode.swift */; };
 		13AF3E2428427C1F00B2334C /* EasyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF3E2328427C1F00B2334C /* EasyTask.swift */; };
 		13F52FF5284BB8DD0064FB10 /* EasyImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F52FF4284BB8DD0064FB10 /* EasyImageNode.swift */; };
+		13F52FF7284BC7840064FB10 /* EasyControlNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F52FF6284BC7840064FB10 /* EasyControlNode.swift */; };
+		13F52FF9284BCC5E0064FB10 /* EasyControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F52FF8284BCC5E0064FB10 /* EasyControl.swift */; };
 		8C8EE6A8FAA2D5326A59317F /* Pods_EasyTextureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4349EBF34EE8C3F2F77DA39A /* Pods_EasyTextureTests.framework */; };
 		F108806B1626DF93134FFAC5 /* Pods_EasyTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C060FDCCB16439DFC61DE2 /* Pods_EasyTexture.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,8 @@
 		13AF3E20284239EF00B2334C /* EasyTextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTextNode.swift; sourceTree = "<group>"; };
 		13AF3E2328427C1F00B2334C /* EasyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTask.swift; sourceTree = "<group>"; };
 		13F52FF4284BB8DD0064FB10 /* EasyImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyImageNode.swift; sourceTree = "<group>"; };
+		13F52FF6284BC7840064FB10 /* EasyControlNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyControlNode.swift; sourceTree = "<group>"; };
+		13F52FF8284BCC5E0064FB10 /* EasyControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyControl.swift; sourceTree = "<group>"; };
 		200272B1937A4C58F7A3CC2D /* Pods-EasyTextureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTextureTests.debug.xcconfig"; path = "Target Support Files/Pods-EasyTextureTests/Pods-EasyTextureTests.debug.xcconfig"; sourceTree = "<group>"; };
 		24C1DE37AFFD8EC2A6B085E9 /* Pods-EasyTexture-EasyTextureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTexture-EasyTextureUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasyTexture-EasyTextureUITests/Pods-EasyTexture-EasyTextureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		28C060FDCCB16439DFC61DE2 /* Pods_EasyTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +189,8 @@
 				132A26FD284366AE0004764D /* EasyProtocol.swift */,
 				132A26FF284375B20004764D /* UIView+EasyNode.swift */,
 				13F52FF4284BB8DD0064FB10 /* EasyImageNode.swift */,
+				13F52FF6284BC7840064FB10 /* EasyControlNode.swift */,
+				13F52FF8284BCC5E0064FB10 /* EasyControl.swift */,
 			);
 			path = EasyNode;
 			sourceTree = "<group>";
@@ -462,7 +468,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13AF3E15283A71A500B2334C /* RunLoopObserver.swift in Sources */,
+				13F52FF9284BCC5E0064FB10 /* EasyControl.swift in Sources */,
 				13AF3E17283A7AC600B2334C /* RunLoopOperation.swift in Sources */,
+				13F52FF7284BC7840064FB10 /* EasyControlNode.swift in Sources */,
 				13AF3E21284239EF00B2334C /* EasyTextNode.swift in Sources */,
 				13AF3DE02839E55600B2334C /* ViewController.swift in Sources */,
 				13AF3E1D28421DCC00B2334C /* EasyTextLine.swift in Sources */,

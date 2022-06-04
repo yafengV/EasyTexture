@@ -25,13 +25,15 @@ class ViewController: UIViewController {
         node.layout.top = 0
         node.layout.width = Float(view.bounds.width)
         node.layout.height = Float(view.bounds.height)
-        node.backgroundColor = .red
+        node.backgroundColor = .white
         node.layout.flexDirection = .row
         node.layout.justifyContent = .flexStart
         node.layout.alignItems = .center
 
         let node2: EasyNode = .init(frame: .zero)
         node2.backgroundColor = .yellow
+        node2.layout.flexDirection = .column
+        node2.layout.justifyContent = .center
         
         let textNode: EasyTextNode = .init(frame: .zero)
         textNode.layout.alignSelf = .stretch
@@ -40,6 +42,13 @@ class ViewController: UIViewController {
         textNode.tag = "text"
         textNode.layout.maxWidth = Float(UIScreen.main.bounds.width / 2)
         node2.addSubNode(textNode)
+        
+        let controlNode: EasyControlNode = .init(frame: .zero)
+        controlNode.layout.width = 100
+        controlNode.layout.height = 100
+        controlNode.backgroundColor = .brown
+        controlNode.control?.addTarget(self, action: #selector(onClick(sender:)), for: .touchUpInside)
+        node2.addSubNode(controlNode)
 
         let node3: EasyNode = .init(frame: .zero)
         node3.layout.flexGrow = 1
@@ -120,6 +129,9 @@ class ViewController: UIViewController {
         node.yoga.applyLayout(preservingOrigin: false)
     }
 
+    @objc func onClick(sender: UIControl) {
+        print("xuan xuan")
+    }
 
 }
 
